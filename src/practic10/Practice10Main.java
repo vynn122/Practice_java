@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package aub8mapro;
+package practic10;
 
 /**
  *
- * @author ratha
+ * @author Nice
  */
-public class AUB8MAPro {
+public class Practice10Main {
 
     /**
      * @param args the command line arguments

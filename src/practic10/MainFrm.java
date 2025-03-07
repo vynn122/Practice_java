@@ -2,21 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package aub8mapro;
+package practic10;
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 /**
  *
- * @author ratha
+ * @author Nice
  */
-public class frmMain extends javax.swing.JFrame {
+public class MainFrm extends javax.swing.JFrame {
 
     /**
      * Creates new form frmMain
      */
-    public frmMain() {
+    public MainFrm() {
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         
@@ -103,14 +103,14 @@ public class frmMain extends javax.swing.JFrame {
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
         // TODO add your handling code here:
         SwingUtilities.invokeLater(() -> 
-                    new frmStudent().setVisible(true)
+                    new StudentFrm().setVisible(true)
             );
     }//GEN-LAST:event_btnStudentActionPerformed
 
     private void btnCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCategoryActionPerformed
         // TODO add your handling code here:
         SwingUtilities.invokeLater(()->
-                new frmCategory().setVisible(true)
+                new CategoryFrm().setVisible(true)
         );
     }//GEN-LAST:event_btnCategoryActionPerformed
 
@@ -131,20 +131,21 @@ public class frmMain extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmMain().setVisible(true);
+                new MainFrm().setVisible(true);
             }
         });
     }

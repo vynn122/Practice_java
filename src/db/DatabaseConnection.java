@@ -6,7 +6,7 @@ package db;
 
 /**
  *
- * @author macbookpro2019
+ * @author Nice
  */
 import java.sql.Connection;
 import java.sql.DriverManager;

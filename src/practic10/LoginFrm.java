@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package aub8mapro;
+package practic10;
 
 import dao.UserDAO;
 import javax.swing.JOptionPane;
@@ -10,14 +10,14 @@ import javax.swing.SwingUtilities;
 
 /**
  *
- * @author ratha
+ * @author Nice
  */
-public class frmLogin extends javax.swing.JFrame {
+public class LoginFrm extends javax.swing.JFrame {
 
     /**
      * Creates new form frmLogin
      */
-    public frmLogin() {
+    public LoginFrm() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -124,7 +124,7 @@ public class frmLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Login successfully!");
             this.setVisible(false);
             SwingUtilities.invokeLater(() -> 
-                    new frmMain().setVisible(true)
+                    new MainFrm().setVisible(true)
             );
         }
         else{
@@ -149,20 +149,21 @@ public class frmLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmLogin().setVisible(true);
+                new LoginFrm().setVisible(true);
             }
         });
     }
