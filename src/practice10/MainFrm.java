@@ -20,7 +20,7 @@ public class MainFrm extends javax.swing.JFrame {
     public MainFrm() {
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        
+
     }
 
     /**
@@ -120,27 +120,26 @@ public class MainFrm extends javax.swing.JFrame {
 
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
         // TODO add your handling code here:
-        SwingUtilities.invokeLater(() -> 
-                    new StudentFrm().setVisible(true)
-            );
+        SwingUtilities.invokeLater(()
+                -> new StudentFrm().setVisible(true)
+        );
     }//GEN-LAST:event_btnStudentActionPerformed
 
     private void btnCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCategoryActionPerformed
         // TODO add your handling code here:
-        SwingUtilities.invokeLater(()->
-                new CategoryFrm().setVisible(true)
+        SwingUtilities.invokeLater(()
+                -> new CategoryFrm().setVisible(true)
         );
     }//GEN-LAST:event_btnCategoryActionPerformed
 
     private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         // TODO add your handling code here:
-        
+
 //        LoginFrm.main(null);
 //        this.dispose();
-
-          SwingUtilities.invokeLater(()->
-           new LoginFrm().setVisible(true)
-          );
+        SwingUtilities.invokeLater(()
+                -> new LoginFrm().setVisible(true)
+        );
     }//GEN-LAST:event_btnLogoutActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -149,9 +148,10 @@ public class MainFrm extends javax.swing.JFrame {
                 "Confirm Exit?",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE);
-        if(CfLogout == JOptionPane.YES_OPTION){
+        if (CfLogout == JOptionPane.YES_OPTION) {
             this.dispose();
-        
+            System.exit(0);
+
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
