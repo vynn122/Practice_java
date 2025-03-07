@@ -15,7 +15,7 @@ import model.Users;
 
 /**
  *
- * @author ratha
+ * @author Nice
  */
 public class UserDAO {
     public static List<Users> getAllData(){

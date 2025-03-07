@@ -14,7 +14,7 @@ import model.Categories;
 
 /**
  *
- * @author ratha
+ * @author Nice
  */
 public class CategoryDAO {
     public static List<Categories> getAllData(){

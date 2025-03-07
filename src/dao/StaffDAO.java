@@ -14,7 +14,7 @@ import model.Categories;
 
 /**
  *
- * @author ratha
+ * @author Nice
  */
 public class StaffDAO {
     public static List<Categories> getAllData(){
