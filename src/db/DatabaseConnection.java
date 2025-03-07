@@ -13,7 +13,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-    private static final String URL = "jdbc:sqlserver://localhost; databaseName=SchoolDB_Java; encrypt=true; trustServerCertificate=true ";
+    private static final String URL = "jdbc:sqlserver://localhost:1434; databaseName=SchoolDB_Java; encrypt=true; trustServerCertificate=true ";
     private static final String USER = "sa";
     private static final String PASSWORD = "vinn9502";
 

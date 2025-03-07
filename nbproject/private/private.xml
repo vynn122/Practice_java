@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Java/AUB8MAPro/src/aub8mapro/AUB8MAPro.java</file>
-            <file>file:/D:/Java/AUB8MAPro/src/db/DatabaseConnection.java</file>
-            <file>file:/D:/Java/AUB8MAPro/src/aub8mapro/frmCategory.java</file>
-            <file>file:/D:/Java/AUB8MAPro/src/aub8mapro/frmMain.java</file>
-            <file>file:/D:/Java/AUB8MAPro/src/aub8mapro/frmLogin.java</file>
-            <file>file:/D:/Java/AUB8MAPro/src/aub8mapro/frmStudent.java</file>
+            <file>file:/D:/Java/Practice10/src/aub8mapro/frmCategory.java</file>
+            <file>file:/D:/Java/Practice10/src/aub8mapro/frmStudent.java</file>
+            <file>file:/D:/Java/Practice10/src/aub8mapro/AUB8MAPro.java</file>
+            <file>file:/D:/Java/Practice10/src/aub8mapro/frmLogin.java</file>
         </group>
     </open-files>
 </project-private>
