@@ -28,7 +28,6 @@ public class StudentFrm extends javax.swing.JFrame {
     public StudentFrm() {
         initComponents();
         this.setLocationRelativeTo(null);
-        //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
     
 

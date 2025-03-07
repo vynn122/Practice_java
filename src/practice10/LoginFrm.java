@@ -47,7 +47,7 @@ public class LoginFrm extends javax.swing.JFrame {
 
         jLabel2.setText("Password:");
 
-        btnOK.setText("OK");
+        btnOK.setText("Login");
         btnOK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOKActionPerformed(evt);
@@ -55,6 +55,11 @@ public class LoginFrm extends javax.swing.JFrame {
         });
 
         btnCancel.setText("Cancel");
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Historic", 0, 24)); // NOI18N
         jLabel3.setText("Login System");
@@ -120,7 +125,13 @@ public class LoginFrm extends javax.swing.JFrame {
 
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         // TODO add your handling code here:
-        if(UserDAO.getLogin(txtUserName.getText(), new String(txtPassword.getPassword()))){
+        String username = txtUserName.getText();
+        String password = String.valueOf(txtPassword.getPassword());
+        if (username.trim().isEmpty() || password.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Username and Password Fields Cannot be empty!!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if(UserDAO.getLogin(username, password)){
             JOptionPane.showMessageDialog(this, "Login successfully!");
             this.setVisible(false);
             SwingUtilities.invokeLater(() -> 
@@ -130,7 +141,14 @@ public class LoginFrm extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(this, "Incorrect user name or password!");
         }
+
+        
     }//GEN-LAST:event_btnOKActionPerformed
+
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnCancelActionPerformed
 
     /**
      * @param args the command line arguments

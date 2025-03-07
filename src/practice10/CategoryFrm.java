@@ -59,7 +59,11 @@ public class CategoryFrm extends javax.swing.JFrame {
         jLabel1.setText("Category ID:");
 
         txtCategoryID.setFont(new java.awt.Font("Khmer OS Battambang", 0, 12)); // NOI18N
-        txtCategoryID.setText("0");
+        txtCategoryID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCategoryIDActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Category Name:");
 
@@ -112,7 +116,7 @@ public class CategoryFrm extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblCategory);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setText("Category Information");
+        jLabel4.setText("Category ");
 
         btnSearch.setText("Search");
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +144,9 @@ public class CategoryFrm extends javax.swing.JFrame {
                                 .addComponent(txtCategoryName, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txtCategoryID, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(txtCategoryDesc, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(67, 67, 67)
+                                .addComponent(jLabel4))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnNew)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -262,6 +268,10 @@ public class CategoryFrm extends javax.swing.JFrame {
         loadData();
         JOptionPane.showMessageDialog(this, "Delete successfully!");
     }//GEN-LAST:event_btnDeleteActionPerformed
+
+    private void txtCategoryIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCategoryIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCategoryIDActionPerformed
 
     /**
      * @param args the command line arguments
